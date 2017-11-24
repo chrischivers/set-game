@@ -1,3 +1,5 @@
 package com.models
 
-case class Player(score: Int = 0)
+import java.util.UUID
+
+case class Player(id: String = UUID.randomUUID().toString, score: Int = 0)
